@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Birds Song QUIZ</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <header class="header container ">
+            <div class="game__logo">
+                <h1 class="game__title">BirdSong</h1>
+                <img class="logo__image" src="./assets/images/logo.png" alt="logo">
+            </div>
+        </header> -->
+        <main class="main container">
+            <aside class="aside hide">
+                <div class="start__title">Choose game type to start</div>
+
+                <div class="game__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item" data-type="0">Training</li>
+                        <li class="menu__item" data-type="1">Passerine</li>
+                        <li class="menu__item" data-type="2">Forest birds</li>
+                        <li class="menu__item" data-type="3">Songbirds</li>
+                        <li class="menu__item" data-type="4">Birds of prey</li>
+                        <li class="menu__item" data-type="5">Sea birds</li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="game">
+                <div class="game__score">SCORE 5/6</div>
+                <div class="question">
+                    <div class="question__picture">
+                        <img class="question__image" src="https://live.staticflickr.com/7605/27669397735_f3c21758f2.jpg"
+                            alt="">
+
+                    </div>
+                    <div class="question__description">
+                        <h2 class="question__title">Whose is that song?</h2>
+                        <audio class="question__voice"
+                            src="https://www.xeno-canto.org/sounds/uploaded/HILVWSADVL/XC513809-R07_0052%20Thrush%20Nightingale%20Snipe.mp3"
+                            controls></audio>
+                    </div>
+                </div>
+
+                <div class="variants">
+                    <ul class="variants__list">
+                        <li class="variants__item">1 bird</li>
+                        <li class="variants__item">2 bird</li>
+                        <li class="variants__item">3 bird</li>
+                        <li class="variants__item">4 bird</li>
+                        <li class="variants__item">5 bird</li>
+                        <li class="variants__item">6 bird</li>
+                    </ul>
+                </div>
+                <div class="answer">
+                    <div class="answer__picture">
+                        <img class="answer__image" src="https://live.staticflickr.com/7605/27669397735_f3c21758f2.jpg"
+                            alt="">
+                    </div>
+                    <div class="answer__description">
+                        <h2 class="answer__title">Bird name</h2>
+                        <audio class="answer__voice"
+                            src="https://www.xeno-canto.org/sounds/uploaded/HILVWSADVL/XC513809-R07_0052%20Thrush%20Nightingale%20Snipe.mp3"
+                            controls></audio>
+                        <div class="answer__text">
+                            <p>"Соловьи поют с начала мая и до конца лета. Каждая песня соловья
+                                состоит из 12 повторяющихся элементов, которые еще называют коленами. Кроме собственных
+                                трелей, соловьи легко и хорошо перенимают пение других птиц."
+                            </p>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id! Asperiores magni
+                                magnam laborum fuga ex porro nihil modi accusamus recusandae temporibus qui quidem
+                                explicabo, officia vero ipsum doloremque ullam.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod, minus consequatur
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id! Asperiores magni
+                                magnam laborum fuga ex porro nihil modi accusamus recusandae temporibus qui quidem
+                                explicabo, officia vero ipsum doloremque ullam.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod, minus consequatur
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id! Asperiores magni
+                                magnam laborum fuga ex porro nihil modi accusamus recusandae temporibus qui quidem
+                                explicabo, officia vero ipsum doloremque ullam.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod, minus consequatur
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id! Asperiores magni
+                                magnam laborum fuga ex porro nihil modi accusamus recusandae temporibus qui quidem
+                                explicabo, officia vero ipsum doloremque ullam.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod, minus consequatur
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, id! Asperiores magni
+                                magnam laborum fuga ex porro nihil modi accusamus recusandae temporibus qui quidem
+                                explicabo, officia vero ipsum doloremque ullam.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod, minus consequatur
+                                explicabo iure molestiae cupiditate, exercitationem delectus earum voluptatum itaque
+                                sed. Veritatis totam quos, consequuntur deserunt ducimus iure pariatur.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer container">
+            <a class="github__link" href="https://github.com/tyronmaster?tab=repositories">github</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a class="rsschool__link" href="https://rs.school/">rs.school 2022 ©</a>
+        </footer>
+
+        <video class="fullscreen__video" preload="auto" autoplay muted loop>
+            <source src="./assets/video/forest-04.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+
+</body>
+
+</html>

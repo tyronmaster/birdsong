@@ -150,13 +150,25 @@ aside {
   background: #333333;
   transition: 0.5s ease-in-out;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1 0 auto;
+  max-height: calc(100vh - 80px);
+}
 .game {
   display: grid;
   grid-template:
     "score score score" 50px
     "question question question"
-    "variants answer answer";
+    "variants answer answer"
+    "next next next" 40px;
   gap: 15px;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .game__score {
@@ -274,6 +286,23 @@ aside {
   font-size: 16px;
 }
 
+.next__button {
+  grid-area: next;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+  /* margin: 5px; */
+  transition: 0.5s ease-in-out;
+}
+.next__button:hover,
+.next__button:active {
+  color: #999999;
+  background: #333333;
+  transition: 0.5s ease-in-out;
+}
+
 .fullscreen__video {
   position: absolute;
   top: 0;
@@ -282,16 +311,6 @@ aside {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex: 1 0 auto;
-  max-height: calc(100vh - 80px);
 }
 
 .footer {
@@ -323,5 +342,15 @@ aside {
   opacity: 0;
   visibility: hidden;
   position: absolute;
+  transition: 0.5s ease-in-out;
+  display: none;
+}
+
+.wrong {
+  color: red;
+  transition: 0.5s ease-in-out;
+}
+.right {
+  color: green;
   transition: 0.5s ease-in-out;
 }

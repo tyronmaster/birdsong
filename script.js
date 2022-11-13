@@ -1,17 +1,11 @@
 import birdsData from "./data.js"
 
-// console.log("birdsData=", birdsData);
-
 function showQuestion(data, shuffledArray, step){
   for(let i = 0; i < data.length; i++){
     if(data[i].id == shuffledArray[step] + 1){
       questionSound.src = data[i].audio;
     }
   }
-}
-
-function getAnswer(){
-
 }
 
 const aside = document.querySelector(".aside");
@@ -23,13 +17,9 @@ variants.forEach((element) => {
     if(clickFlag == 1){
     let id = e.currentTarget.dataset.id;
     drawAnswer(gameQuiz[id - 1]);
-    console.log("id=", id);
-    console.log("shuffledList[gameStep]", shuffledList[gameStep]);
-
     if(checkAnswer(id, shuffledList[gameStep] + 1)){
       e.currentTarget.classList.add("right");
       questionImage.src = gameQuiz[id - 1].image;
-
     } else {
       e.currentTarget.classList.add("wrong");
       questionImage.src = "./assets/images/unknownbird.jpg";
@@ -57,12 +47,9 @@ gameTypes.forEach((element) => {
     element.addEventListener("click", (e) => {
     type = e.currentTarget.dataset.type;
     gameQuiz = birdsData[type];
-    // console.log("type=", type);
-    console.log("gameQuiz=", gameQuiz);
     aside.classList.add("hide");
     game.classList.remove("hide");
     shuffledList = CreateShuffledList(gameQuiz.length);
-    console.log("shuffledLis=", shuffledList);
     drawVariants(gameQuiz, variants);
     showQuestion(gameQuiz, shuffledList, gameStep);
     });
